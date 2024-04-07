@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Biblioteca</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #470B0B;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #BB832E;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #470B0B;
+            text-align: center;
+        }
+
+        .book {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .book h2 {
+            color: #444;
+            margin-bottom: 5px;
+        }
+
+        .drink p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Biblioteca</h1>
+        {% for book in library %}
+            <div class="book">
+                <p><h2>{{ book.title }}</h2> <h4>{{ book.author }}</h4> </p>
+                <p>{{ book.genre }} - {{ book.date }} - {{ book.publisher }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
+
+{% comment "" %}
+Aqui eu so fiz uma interface para exibir todos os dados dos books
+{% endcomment %}
