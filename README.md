@@ -21,8 +21,8 @@ No terminal, entre no diretório da aplicação e execute `python manage.py runs
 A API agora pode receber suas requisições HTTP, você pode utilizar o Postman para fazê-las.
 O endereço padrão seria http://127.0.0.1:8000/library/ , onde são mostrados os livros e suas informações, como 'id', 'title', 'author', 'date', 'genre' e 'publisher'.<br>
 Para exibir os dados dos livros no formato JSON http://127.0.0.1:8000/library.json/ <br>
-Para exibir os dados de um livro de id = <id> http://127.0.0.1:8000/library/<id>/ <br>
-Para exibir os dados de um livro de id = <id> http://127.0.0.1:8000/library/<id>.json/ <br>
+Para exibir os dados de um livro de id = _id http://127.0.0.1:8000/library/_id/ <br>
+Para exibir os dados de um livro de id = _id http://127.0.0.1:8000/library/_id.json/ <br>
 Para exibir uma interface contendo informações dos livros em HTML = <id> http://127.0.0.1:8000/booklist/<br>
 
 
